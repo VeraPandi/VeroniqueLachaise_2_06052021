@@ -1,0 +1,558 @@
+/**********************************************/
+/*-------- General styles --------*/
+/**********************************************/
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+}
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 12px;
+}
+a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+.main {
+  padding: 0 50px;
+}
+.container {
+  display: flex;
+}
+.checked {
+  color: #0065fc;
+}
+.unchecked {
+  color: #d9d9d9;
+}
+
+/**********************************************/
+/*-------- Header --------*/
+/**********************************************/
+.header {
+  display: flex;
+  padding: 40px 45px 0 52px;
+}
+.header img {
+  max-width: 98px;
+}
+
+/*-- Top nav --*/
+.top-nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+.link-1 {
+  padding: 42px 21px;
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+  font-weight: 500;
+}
+.link-2 {
+  padding: 43px 46px;
+}
+.link-2:focus {
+  padding: 43px 50px;
+  border-top: 2px solid #0065fc;
+}
+.signup {
+  padding: 5px 35px 43px 22px;
+}
+.signup-button {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+/**********************************************/
+/*-------- Search box --------*/
+/**********************************************/
+
+/*-- Search box --*/
+.search-box h1 {
+  margin-bottom: 1px;
+}
+.search-box h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.search-bar {
+  font-size: 0;
+}
+.map-icon {
+  display: inline-block;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  padding: 15px 20px 14px;
+  margin-left: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  background-color: #f2f2f2;
+}
+.search-bar form {
+  display: inline;
+}
+input[type="search"] {
+  display: inline;
+  height: 50px;
+  width: 236px;
+  padding: 15px;
+  border: 1px solid #f2f2f2;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+}
+#searchtext::placeholder {
+  color: #000;
+}
+input[type="submit"] {
+  display: inline;
+  height: 50px;
+  width: 135px;
+  padding: 15px;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0065fc;
+}
+
+/*-- Search filters --*/
+.search-tags {
+  margin: 33px auto 22px;
+}
+.search-tags ul {
+  padding: 0;
+}
+/**début animation**/
+.search-tags li {
+  display: inline-block;
+  margin: 0 21px 0 10px;
+  border: 2px solid #d9d9d9;
+  border-radius: 27px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 200ms ease-out;
+}
+.search-tags a {
+  transition: all 200ms ease-out;
+}
+.search-tags li:hover {
+  /*transition: all 1s ease-out;*/
+  /*border: 2px solid #0065fc;*/
+  /*border: 1px solid #deebff;*/
+  /*border: 2px solid #0065fc;*/
+  /*transition-duration: 0.3s;*/
+  /*background-color: #deebff;*/
+  border: 2px solid #fff;
+}
+.search-tags a:hover {
+  /*height: 50px;
+  width: auto;*/
+  transform: scale(0.9);
+  color: #0065fc;
+}
+.search-tags a span:hover {
+}
+/**fin animation**/
+
+.search-tags li:first-child {
+  padding-right: 8px;
+  border: 0;
+}
+.search-tags li:first-child:hover {
+  border: none;
+}
+.search-tags a {
+  display: inline-block;
+  padding-right: 22px;
+  border-radius: 27px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.search-tags a span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  padding: 16px;
+  margin-right: 13px;
+  margin: -2px -10px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  color: #0065fc;
+  background: #deebff;
+}
+.information-icon {
+  display: inline-block;
+}
+.information-icon .fas {
+  padding: 5px 9px 5px 9px;
+  margin: 0 6px 0 9px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+  font-size: 11.5px;
+  color: #0065fc;
+  background: none;
+}
+.search-tags .fas {
+  margin-right: 14px;
+  /*margin-right: 14px;
+  height: 24px;
+  width: 27px;
+  padding: 13px;
+  margin-left: -3px;*/
+}
+.search-tags a:hover {
+  /*transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+  &:focus {
+    transform: scale (0.8);
+  }*/
+}
+/**********************************************/
+/*-------- Accommodations box --------*/
+/**********************************************/
+
+/*-- Accommodations box--*/
+.accommodation-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  order: 1;
+  padding: 25px 40px;
+  margin: 20px 0 20px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+.accommodation-title {
+  width: 100%;
+  margin-bottom: -10px;
+}
+.accommodation-title h2 {
+  font-size: 22px;
+}
+
+/*-- Accommodation card --*/
+.accommodation-box .card {
+  height: 190px;
+  width: 237px;
+  padding: 5px;
+  margin: 17px 0;
+  border-radius: 17px;
+  line-height: 0.5;
+  box-shadow: 0 0 10px #c8c8c8;
+  background-color: #fff;
+}
+.accommodation-box .card img {
+  height: 114px;
+  width: 237px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.accommodation-box .card-text {
+  padding: 2px 10px;
+}
+.accommodation-box .card-text h3 {
+  font-size: 13.5px;
+  font-weight: inherit;
+}
+.accommodation-box .card-text h3 span {
+  font-weight: bold;
+}
+.accommodation-box .card-text p {
+  font-size: 12px;
+}
+.accommodation-box .card-text .fas {
+  letter-spacing: -2px;
+}
+
+/*-- Accommodation see more --*/
+.accommodation-box .see-more {
+  width: 100%;
+  padding: 25px 0 23px;
+  font-size: 17.5px;
+  font-weight: bold;
+}
+
+/**********************************************/
+/*-------- Popular posts box --------*/
+/**********************************************/
+
+/*-- Popular posts box --*/
+.popularpost-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  order: 2;
+  max-width: 420px;
+  padding: 25px 40px;
+  margin: 20px 0 20px 33px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+.popularpost-title {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  margin-bottom: -9px;
+}
+.popularpost-title h2 {
+  width: 100%;
+  font-size: 22px;
+}
+
+/*-- Popular posts card --*/
+.popularpost-box .card {
+  width: 336px;
+  padding: 5px;
+  margin: 17px 0;
+  border-radius: 17px;
+  box-shadow: 0 0 10px #c8c8c8;
+  background-color: #fff;
+}
+.popularpost-box .card a {
+  display: flex;
+  font-size: 0;
+}
+.popularpost-box .card img {
+  height: 134px;
+  width: 127px;
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
+}
+.popularpost-box .card-text {
+  padding: 0 20px;
+}
+.popularpost-box .card-text h3 {
+  font-size: 13.5px;
+  font-weight: inherit;
+}
+.popularpost-box .card-text h3 span {
+  font-weight: bold;
+}
+.popularpost-box .card-text p {
+  font-size: 11px;
+  padding-top: 18px;
+  margin-bottom: 0;
+}
+.popularpost-box .card-text .fas {
+  letter-spacing: -2px;
+}
+
+/**********************************************/
+/*-------- Activities box --------*/
+/**********************************************/
+
+/*-- Activities box --*/
+.activities-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 22px 0 66px;
+}
+.activities-title {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.activities-title h2 {
+  font-size: 22px;
+}
+
+/*-- Activities card --*/
+.activities-box .card {
+  height: 445px;
+  width: 300px;
+  border-radius: 17px;
+}
+.card-title {
+  padding: 4px 19px;
+}
+.activities-box section {
+  margin: 0;
+}
+
+/*-- Card single --*/
+.card-single {
+  border-radius: 17px;
+  box-shadow: 0 6px 10px #eee;
+}
+.activities-box .card img {
+  height: 390px;
+  width: 300px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+/*-- Card double, number 1 --*/
+.activities-box .card-double-one {
+  width: 300px;
+  border-radius: 17px;
+  box-shadow: 0 6px 10px #eee;
+}
+.activities-box .card-double-one img {
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+/*-- Card double, number 2 --*/
+.activities-box .card-double-two {
+  width: 300px;
+  margin-top: 42px;
+  border-radius: 17px;
+  box-shadow: 0 6px 10px #eee;
+}
+.activities-box .card-double-two img {
+  height: 110px;
+  width: 300px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+/*-- Card double, number 3 --*/
+.activities-box .card-double-three {
+  width: 300px;
+  border-radius: 17px;
+  box-shadow: 0 6px 10px #eee;
+}
+.activities-box .card-double-three img {
+  height: 140px;
+  width: 300px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+/*-- Card double, number 4 --*/
+.activities-box .card-double-four {
+  width: 300px;
+  margin-top: 42px;
+  border-radius: 17px;
+  box-shadow: 0 6px 10px #eee;
+}
+.activities-box .card-double-four img {
+  height: 150px;
+  width: 300px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+/**********************************************/
+/*-------- Footer navigation --------*/
+/**********************************************/
+
+.footer {
+  max-height: 218px;
+  padding: 30px 50px;
+  background-color: #f2f2f2;
+}
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+}
+.bottom-nav section {
+  width: 33%;
+}
+.bottom-nav h2 {
+  font-size: 18px;
+}
+.bottom-nav ul {
+  display: inline;
+  padding: 0;
+}
+.bottom-nav li {
+  list-style: none;
+  line-height: 2;
+}
+
+/**********************************************/
+/*-------- Responsive --------*/
+/**********************************************/
+
+@media all and (min-width: 1440px) {
+  html {
+    background-color: #f2f2f2;
+  }
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid #dfdfdf;
+  }
+}
+
+@media all and (max-width: 1423px) {
+  .accommodation-box .card {
+    height: 190px;
+    width: 300px;
+  }
+  .accommodation-box .card img {
+    height: 114px;
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 655px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .header {
+    flex-wrap: wrap;
+    padding: 35px 20px 20px;
+  }
+  .top-nav {
+    flex-wrap: wrap-reverse;
+    order: 2;
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  .signup {
+    order: 1;
+    justify-content: flex-end;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0;
+  }
+  .popularpost-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    order: 1;
+  }
+  .accommodation-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    order: 2;
+  }
+}
+
+/*
+@media all and (max-width: 1200px){}
+@media all and (max-width: 992px){}
+@media all and (max-width: 768px){}
+
+@media all and (max-width: 868px){
+.top-nav ul li:nth-child(3) {display: flex; justify-content: flex-start;}*/
+
+/*media :
+On met les 3 breakpoints principaux, puis on met un redimensionnement flexible.  
+- sur tablette, les cartes doivent garder leur style visuel d'origine (ex : les "activités". Pas de carré, pas de rectangle pour faire rentrer.)
+- largeur de la maquette mobile = 375px.*/

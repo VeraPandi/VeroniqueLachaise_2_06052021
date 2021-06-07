@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservia</title>
+    <meta
+      name="description"
+      content="Trouvez votre hébergement pour des vacances de rêve, en plein centre ville ou en pleine nature"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div>
+        <img src="images/logo/logo_reservia.png" alt="Logo de Reservia" />
+      </div>
+      <!-- Top nav -->
+      <nav class="top-nav">
+        <div>
+          <a class="link-1" href="#hebergements">Hébergements</a>
+          <a class="link-2" href="#activites">Activités</a>
+        </div>
+      </nav>
+      <div class="signup">
+        <a class="signup-button" href="#">S'inscrire</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Search box -->
+      <section class="search-box">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre ville ou en pleine nature</h2>
+        <div class="search-bar">
+          <span class="map-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <form method="post" action="#">
+            <label for="searchtext">
+              <input
+                type="search"
+                id="searchtext"
+                name="search"
+                placeholder="Marseille, France"
+                required
+              />
+            </label>
+            <input type="submit" value="Rechercher" />
+          </form>
+        </div>
+        <!-- Search filters -->
+        <div class="search-tags">
+          <ul>
+            <li>Filtres</li>
+            <li>
+              <a href="#">
+                <span class="fas fa-money-bill-wave"></span>&#xC9;conomique</a
+              >
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-child"></span>Familial</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-heart"></span>Romantique</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-dog"></span>Animaux autorisés</a>
+            </li>
+          </ul>
+        </div>
+        <p class="information-icon">
+          <span class="fas fa-info"></span> Plus de <span>500</span> logements
+          sont disponibles dans cette ville
+        </p>
+      </section>
+
+      <!-- This container brings together the accommodations box and the popular posts box in order to be managed by flexbox -->
+      <div class="container">
+        <!-- Accommodations box -->
+        <article class="accommodation-box">
+          <div class="accommodation-title">
+            <h2 id="hebergements">Hébergements à Marseille</h2>
+          </div>
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/accommodations/auberge_la_cannebiere.jpg"
+                  alt="Une chambre avec un lit superposé."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Auberge La Cannebière</h2>
+                <h3>Nuit à partir de 25<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star unchecked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/accommodations/hotel_du_port.jpg"
+                  alt="Une chambre de deux lits, aux tons blancs, bleus clairs et gris."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Hôtel du port</h2>
+                <h3>Nuit à partir de 52<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/accommodations/hotel_les_mouettes.jpg"
+                  alt="Une chambre aux tons blancs et marrons avec, en son centre, un lit de deux places."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Hôtel Les mouettes</h2>
+                <h3>Nuit à partir de 76<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star unchecked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/accommodations/hotel_de_la_mer.jpg"
+                  alt="Une chambre aux tons marins, composée d'un lit de deux places en son centre."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Hôtel de la mer</h2>
+                <h3>Nuit à partir de 46<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star unchecked"></span>
+                  <span class="fas fa-star unchecked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/accommodations/auberge_le_panier.jpg"
+                  alt="Une chambre au style rustique comportant deux lits superposés."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Auberge Le Panier</h2>
+                <h3>Nuit à partir de 23<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star unchecked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/accommodations/hotel_chez_amina.jpg"
+                  alt="Une chambre aux tons blancs et marron, composée de deux lits, d'un bureau et d'une télévision."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Hôtel chez Amina</h2>
+                <h3>Nuit à partir de 96<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+          <span class="see-more">Afficher plus</span>
+        </article>
+
+        <!-- Popular posts box -->
+        <article class="popularpost-box">
+          <div class="popularpost-title">
+            <h2>Les plus populaires</h2>
+            <a class="popularpost-icon" href="#">
+              <span class="fas fa-chart-line fa-lg"></span>
+            </a>
+          </div>
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/popular_posts/hotel_le_soleil_du_matin.jpg"
+                  alt="Une chambre aux tons verts, blancs et dorés, composée d'un lit de deux places."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Hôtel Le soleil du matin</h2>
+                <h3>Nuit à partir de 128<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/popular_posts/au_coeur_de_leau_chambres_dhotes.jpg"
+                  alt="Une chambre au style marbre et fer forgé, composée d'un lit de deux places en son centre."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                <h3>Nuit à partir de 71<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star unchecked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="#">
+              <div>
+                <img
+                  src="images/popular_posts/hotel_tout_bleu_et_blanc.jpg"
+                  alt="Une chambre d'un lit de deux places, aux tons blancs et bois."
+                />
+              </div>
+              <div class="card-text">
+                <h2>Hôtel Tout bleu et Blanc</h2>
+                <h3>Nuit à partir de 68<span>&#x20AC;</span></h3>
+                <p>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star checked"></span>
+                  <span class="fas fa-star unchecked"></span>
+                </p>
+              </div>
+            </a>
+          </section>
+        </article>
+      </div>
+
+      <!-- Activities box -->
+      <article class="activities-box">
+        <div class="activities-title">
+          <h2 id="activites">Activités à Marseille</h2>
+        </div>
+        <!-- Card single -->
+        <section class="card">
+          <div class="card-single">
+            <a href="#">
+              <div class="card-img">
+                <img
+                  src="images/activities/vieux_port.jpg"
+                  alt="Image représentant un port au premier plan, et des immeubles au second plan."
+                />
+              </div>
+              <div class="card-title">
+                <h2>Vieux Port</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-double-one">
+            <a href="#">
+              <div class="card-img">
+                <img
+                  src="images/activities/fort_de_pomegues.jpg"
+                  alt="Image représentant un vieux fort."
+                />
+              </div>
+              <div class="card-title">
+                <h2>Fort de Pomègues</h2>
+              </div>
+            </a>
+          </div>
+
+          <div class="card-double-two">
+            <a href="#">
+              <div class="card-img">
+                <img
+                  src="images/activities/iles_du_frioul.jpg"
+                  alt="Image représentant la mer au premier plan, et une île en second plan."
+                />
+              </div>
+              <div class="card-title">
+                <h2>Îles du Frioul</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Card single -->
+        <section class="card">
+          <div class="card-single">
+            <a href="#">
+              <div class="card-img">
+                <img
+                  src="images/activities/parc_national_des_calanques.jpg"
+                  alt="Image représentant un long massif rocheux au bord de la mer."
+                />
+              </div>
+              <div class="card-title">
+                <h2>Parc National des Calanques</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-double-three">
+            <a href="#">
+              <div class="card-img">
+                <img
+                  src="images/activities/notre_dame_de_la_garde.jpg"
+                  alt="Image représentant une basilique surplombant une ville."
+                />
+              </div>
+              <div class="card-title">
+                <h2>Notre-Dame-de-la-Garde</h2>
+              </div>
+            </a>
+          </div>
+
+          <div class="card-double-four">
+            <a href="#">
+              <div class="card-img">
+                <img
+                  src="images/activities/parc_longchamp.jpg"
+                  alt="Image d'un palais-château d'eau de style néo-classique."
+                />
+              </div>
+              <div class="card-title">
+                <h2>Parc Longchamp</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- Footer navigation -->
+    <footer class="footer">
+      <nav class="bottom-nav">
+        <section class="about">
+          <h2>A propos</h2>
+          <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+          </ul>
+        </section>
+
+        <section class="our-accommodations">
+          <h2>Nos hébergements</h2>
+          <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+          </ul>
+        </section>
+
+        <section class="get-help">
+          <h2>Assistance</h2>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </section>
+      </nav>
+    </footer>
+  </body>
+</html>
