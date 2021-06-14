@@ -29,7 +29,7 @@
       </div>
       <!-- Top nav -->
       <nav class="top-nav">
-        <div>
+        <div class="topnav-links">
           <a class="link-1" href="#hebergements">Hébergements</a>
           <a class="link-2" href="#activites">Activités</a>
         </div>
@@ -56,13 +56,18 @@
                 required
               />
             </label>
-            <input type="submit" value="Rechercher" />
+            <div class="search-icon">
+              <button name="submit" type="submit">
+                <span class="button-desktop">Rechercher</span>
+                <span class="button-mobile"><i class="fas fa-search"></i></span>
+              </button>
+            </div>
           </form>
         </div>
         <!-- Search filters -->
         <div class="search-tags">
+          <h3>Filtres</h3>
           <ul>
-            <li>Filtres</li>
             <li>
               <a href="#">
                 <span class="fas fa-money-bill-wave"></span>&#xC9;conomique</a
@@ -79,9 +84,11 @@
             </li>
           </ul>
         </div>
-        <p class="information-icon">
-          <span class="fas fa-info"></span> Plus de <span>500</span> logements
-          sont disponibles dans cette ville
+        <div class="information-icon">
+          <span class="fas fa-info"></span>
+        </div>
+        <p class="information">
+          Plus de <span>500</span> logements sont disponibles dans cette ville
         </p>
       </section>
 
@@ -230,7 +237,7 @@
         <article class="popularpost-box">
           <div class="popularpost-title">
             <h2>Les plus populaires</h2>
-            <a class="popularpost-icon" href="#">
+            <a href="#">
               <span class="fas fa-chart-line fa-lg"></span>
             </a>
           </div>
@@ -312,7 +319,7 @@
         <section class="card">
           <div class="card-single">
             <a href="#">
-              <div class="card-img">
+              <div>
                 <img
                   src="images/activities/vieux_port.jpg"
                   alt="Image représentant un port au premier plan, et des immeubles au second plan."
@@ -329,7 +336,7 @@
         <section class="card">
           <div class="card-double-one">
             <a href="#">
-              <div class="card-img">
+              <div>
                 <img
                   src="images/activities/fort_de_pomegues.jpg"
                   alt="Image représentant un vieux fort."
@@ -343,7 +350,7 @@
 
           <div class="card-double-two">
             <a href="#">
-              <div class="card-img">
+              <div>
                 <img
                   src="images/activities/iles_du_frioul.jpg"
                   alt="Image représentant la mer au premier plan, et une île en second plan."
@@ -360,7 +367,7 @@
         <section class="card">
           <div class="card-single">
             <a href="#">
-              <div class="card-img">
+              <div>
                 <img
                   src="images/activities/parc_national_des_calanques.jpg"
                   alt="Image représentant un long massif rocheux au bord de la mer."
@@ -377,7 +384,7 @@
         <section class="card">
           <div class="card-double-three">
             <a href="#">
-              <div class="card-img">
+              <div>
                 <img
                   src="images/activities/notre_dame_de_la_garde.jpg"
                   alt="Image représentant une basilique surplombant une ville."
@@ -391,7 +398,7 @@
 
           <div class="card-double-four">
             <a href="#">
-              <div class="card-img">
+              <div>
                 <img
                   src="images/activities/parc_longchamp.jpg"
                   alt="Image d'un palais-château d'eau de style néo-classique."
@@ -409,7 +416,7 @@
     <!-- Footer navigation -->
     <footer class="footer">
       <nav class="bottom-nav">
-        <section class="about">
+        <section>
           <h2>A propos</h2>
           <ul>
             <li><a href="#">Fonctionnement du site</a></li>
@@ -418,7 +425,7 @@
           </ul>
         </section>
 
-        <section class="our-accommodations">
+        <section>
           <h2>Nos hébergements</h2>
           <ul>
             <li><a href="#">Charte qualité</a></li>
@@ -426,7 +433,7 @@
           </ul>
         </section>
 
-        <section class="get-help">
+        <section>
           <h2>Assistance</h2>
           <ul>
             <li><a href="#">Centre d'aide</a></li>
